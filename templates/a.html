@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fertilizer Recommendation System</title>
+    <link rel="stylesheet" href="static\style.css">
+
+</head>
+<body>
+
+    <!-- <h1>Fertilizer Recommendation System</h1>
+    <form method="post" action="/predict">
+        <label class="form">Nitrogen</label><br>
+        <input type="text" name="Nitrogen" style="color: aqua;"><br><br>
+
+        <label>Potassium</label><br>
+        <input type="text" name="Potassium"><br><br>
+
+        <label>Phosphorous</label><br>
+        <input type="text" name="Phosphorous"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+
+        {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    </form> -->
+    <form class="form" method="post" action="/predict">
+        <h1>Fertilizer Recommendation System</h1>
+
+        <label>Nitrogen</label>
+        <input placeholder="Enter Nitrogen" name="Nitrogen" class="input" type="text">
+        <label for="">Potassium</label>
+        <input placeholder="Enter Potassium" name="Potassium" class="input" type="text">
+        <label for="">Potassium</label>
+        <input placeholder="Enter Phosphorous" name="Phosphorous" class="input" type="text">
+      
+        <button type="submit" value="Predict">Predict</button>
+        {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+      </form>
+
+</body>
+</html>
